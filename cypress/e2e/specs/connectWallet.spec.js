@@ -16,5 +16,8 @@ describe('Test User Login', () => {
 
     // Accept Metamask access
     cy.acceptMetamaskAccess();
+
+    // Check if "Wrap" button is displayed and disabled
+    superFluidPage.elements.wrapButton().should('be.disabled');
   });
 });
