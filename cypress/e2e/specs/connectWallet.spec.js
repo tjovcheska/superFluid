@@ -16,16 +16,5 @@ describe('Test User Login', () => {
 
     // Accept Metamask access
     cy.acceptMetamaskAccess();
-
-    // assuming there is only metamask popping up 
-    // always important to switch between metamask and cypress window
-    // cy.switchToMetamaskWindow();
-    // // connect to dapp
-    // cy.acceptMetamaskAccess().should("be.true");
-    // cy.confirmMetamaskSignatureRequest();
-    // // switch back to cypress window (your dApp)
-    // cy.switchToCypressWindow();
-    // // check UI change
-    // cy.contains('...').should('be.visible');
   });
 });
