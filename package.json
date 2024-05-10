@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "cypress": "^13.9.0"
+  },
+  "dependencies": {
+    "@synthetixio/synpress": "^3.7.2-beta.10",
+    "env-cmd": "^10.1.0"
+  },
+  "scripts": {
+    "test": "env-cmd -f .env npx synpress run -cf synpress.config.js --config supportFile='cypress/support/index.js'"
+  }
+}
